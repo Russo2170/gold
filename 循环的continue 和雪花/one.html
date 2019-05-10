@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>if语句</title>
+<script type="text/JavaScript">
+var dec = function(){
+    for ( var il = 0; il < 3 ; il++ ){
+        　 document.write("i的值是" + il);
+　　　　　　　if (il == 1){
+　　　　　　　　　
+　　　　　　　　　continue;// 忽略本次循环的剩下语句，即能够输出上面i的值的语句  但不能继续下面的continue后的输出语句
+　　　　　　　}
+　　　　　　document.write("continue后的输出语句");
+　　　　}
+}
+
+ //创建数组
+ var arr = ['*','**','***','****'];
+ 
+ //显示数组长度
+ 
+ for(var i = 0; i < arr.length; i++) {
+     document.write(arr[i]+'<br />');
+ }
+ //将数组内容输出，完成达到的效果。
+
+
+</script>
+</head>
+<body><input type="button" onclick="dec()" value="循环">
+    <!-- 调用dec（）函数 -->
+    
+</body>
+</html>
