@@ -1,0 +1,158 @@
+<!-- 以下这一行定义了这个html页面是html 5 -->
+<!DOCTYPE html>
+<link rel="stylesheet" href="mystyle.css" type="text/css">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ </head>
+<body>
+<h1>HTML5 文档结构元素使用实例</h1>
+<!-- 这里用nav定义了全局页面导航 -->
+<nav>
+<ul>
+<li><a href="/">登录</a></li>
+<li><a href="/">注册</a></li>
+<li><a href="/">主页</a></li>
+<li><a href="/myaccount">我的账号</a></li>
+</ul>
+</nav>
+<script>
+	document.write(Date());
+
+</script>
+ <!-- article元素代表了文档，页面或者应用程序中独立的完整的并且可以被外部引用的内容 -->
+  <article>
+     <!-- 这个header元素具有引导和导航作用，网页中可以拥有任意数目的header-->
+      <header>
+      <!-- 如果一个区块有多个标题，那么hgroup则可以为这些标题/子标题分组 -->
+      <hgroup>
+      <!-- 一般标题都应该放在header元素中 -->
+      <h3>粤嵌java</h3>
+
+      <h4>粤嵌java Good</h4>
+
+     </hgroup>
+
+      <p>发表日期：
+
+			<time pubdate datetime="2012/07/21">2012/07/21</time>
+			
+
+      </p>
+     <!-- 这里的nav定义了页内导航，它的超链接指向了页面内某块，用id选择器语法标识 -->
+     <nav>
+     <ul>
+
+<li><a href="#fkjava">粤嵌java介绍</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- 这块是这个article的正文部分 -->
+
+ <p>
+<b>粤嵌java</b>，粤嵌java1，粤嵌java2，粤嵌java3，粤嵌java4
+
+</p>
+
+ <!-- 这里的section元素表明对页面的内容进行分块，它不是article(强调独立)，它只是article的内容块（强调分块），它也有标题和内容 -->
+
+<!-- section元素可以加id,这样可以被引用，比如超链接的指向 -->
+ <section id="fkjava">
+
+<!-- section也有标题而且推荐使用标题 -->
+
+ <h3>评论</h3>     
+
+     <!-- 这里演示了article的嵌套 ，所以下面部分的article表示局部内容，而不是整体内容，它作为section的内容部分-->
+
+     <article>
+
+			<header>
+
+			<h4>发布者：luochunlong</h4>
+
+			 <p>
+
+			  <!-- time元素是HTML5中新增的元素，表示24小时中的某个时刻或者时期，允许带时差 -->
+
+			  <!-- datetime属性不会显示在网页中，但是会被浏览器读到，日期和时间用T分隔，时间可以带时差(+ -号） -->
+
+			  <!-- pubdate属性代表了这article的发布时间，这个属性是可选的 -->
+
+			  <time pubdate datetime="2015-06-21T8:03-00:00">
+
+					1小时前
+
+			   </time>
+
+			   </p>
+
+			 </header>
+
+
+
+	 </article>
+
+
+
+	<article>
+
+		  <header>
+
+		  <h4>发布者：罗春龙</h4>
+
+		   <p>
+
+			  <time pubdate datetime="2012-07-21T8:03-00:00">1小时前</time>
+
+		   </p>
+
+		   </header>
+
+		   <p>
+
+			粤嵌java 加入改变世界的力量！
+
+		   </p>
+
+	</article>
+
+</section>
+
+
+
+</article>
+
+
+
+<!-- footer表示为上层内容区块或者根区块做一个页脚，footer个数不受限制，article,section,全局都可以设置footer -->
+
+<footer>
+
+<ul>
+
+<li>版权信息:广州粤嵌</li>
+
+<li>站点地图:******</li>
+
+<li>联系方式:8888888</li> 
+
+<!-- address用于在文档中呈现联系信息 -->
+
+<address>
+
+<a title="文章作者：罗春龙"  href="http://http://www.yueqian.com.cn/">罗春龙</a>
+
+	发表于<time datetime="2015/06/21">2015年06月21日</time>
+
+</address>
+
+</ul>
+
+</footer> 
+
+</body>
+
+
+
