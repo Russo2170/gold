@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 光标聚焦事件 </title>
+  <script type="text/javascript">
+    function message(){
+	  alert("请选择，您现在的职业！");
+	}
+  </script>
+</head>
+<body>
+请选择您的职业：<br>
+  <form>
+    <select name="career" onfocus = "message()"> 
+        <!-- 此onfocus效果对360浏览器有bug，建议用火狐 -->
+      <option>学生</option> 
+      <option>教师</option> 
+      <option>工程师</option> 
+      <option>演员</option> 
+      <option>会计</option> 
+    </select> 
+  </form>
+</body>
+</html>
+<!-- 1.onclick是在对象被鼠标点击或者选取时触发
+
+2.onfocus是在对象获得焦点（“焦点”大概是接受键盘输入的意思）时触发，获得焦点可以通过点击鼠标或者用TAB键
+
+例如：
+
+<input type="radio" name="" value="" onclick="alert('OK')">
+<input type="radio" name="" value="" onfocus="alert('OK')">
+两者有很大的区别，对于，onclick，当用户点击并且被选中的情况下才会弹出alert。而onfocus，当用户点击时就会弹出alert，此时不会被选中，要重新点击radio才能背选中。
+--------------------- 
+作者：xiaoshitongzhisx 
+来源：CSDN 
+原文：https://blog.csdn.net/xiaoshitongzhisx/article/details/40071603 
+版权声明：本文为博主原创文章，转载请附上博文链接！ -->
