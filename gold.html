@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>示例</title>
+    <script src="../jq控制品牌效果/jq/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" >
+    var i,j;
+    for(i=0;i<5;i++){
+          for(j=0;j<=i;j++){
+              document.write("$");//i=1时j=0还有1当j=2时不符合条件结束内循环。i++，i=2时，j=0重新开始循环
+              
+          }
+       document.write("<br/>");
+    }
+
+//正立三角形
+    var k,p;
+       for(k=5;k>0;k--){
+           for(p=0;p<k;p++){
+             document.write("#");
+           }
+          document.write("<br/>");
+       }//倒立三角形
+//正经金字塔
+  var w,a,t;
+  for (a=1;a<=10;a++){
+        for(w=1;w<=(10-a);w++){
+        document.write("&nbsp;");
+
+        }
+        for (t=1;t<=2*a-1;t++){
+        document.write("*");
+
+        }
+        document.write("<br/>");
+  }
+    
+    </script>
+</head>
+<body>
+        <div class="SubCategoryBox">
+            <ul>
+                <li><a href="#">佳能</a><i>(233)</i></li>
+                <li><a href="#">索尼</a><i>(5243)</i></li>
+                <li><a href="#">三星</a><i>(343)</i></li>
+                <li><a href="#">尼康</a><i>(435)</i></li>
+                <li><a href="#">松下</a><i>(56)</i></li>
+                <li><a href="#">卡西欧</a><i>(435435)</i></li>
+                <li><a href="#">富士</a><i>(5645)</i></li>
+                <li><a href="#">柯达</a><i>(435346)</i></li>
+                <li><a href="#">宾得</a><i>(345)</i></li>
+                <li><a href="#">理光</a><i>(4534)</i></li>
+                <li><a href="#">奥林巴斯</a><i>(453)</i></li>
+                <li><a href="#">明基</a><i></i>(898)</li>
+                <li><a href="#">爱国者</a><i></i>(7867)</li>
+                <li><a href="#">其他品牌相机</a><i>(64)</i></li>
+            </ul>
+            <div class="showmore"><a href="more.html"><span>显示全部品牌</span></a>
+            </div>
+
+        </div>
+
+</body>
+</html>
